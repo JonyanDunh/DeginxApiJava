@@ -1,14 +1,15 @@
 package DeginxApiJava.Routes.Account;
 
+import DeginxApiJava.MainVerticle;
+import io.vertx.core.http.HttpHeaders;
+import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
 public class Login {
   public static void login(RoutingContext ctx) {
-    out(ctx, "login");
+
+    MainVerticle.JsonResponese(ctx, new JsonObject().put("fuck","you"));
   }
 
-  private static void out(RoutingContext ctx, String msg) {
-    ctx.response().putHeader("Content-Type", "text/plain; charset=utf-8")
-      .end(msg);
-  }
+
 }
