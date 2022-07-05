@@ -8,7 +8,7 @@ import io.vertx.ext.web.RoutingContext;
 public class Login {
   public static void login(RoutingContext ctx) {
 
-    MainVerticle.JsonResponese(ctx, new JsonObject().put("fuck","you"));
+    MainVerticle.JsonResponese(ctx,404, new JsonObject().put("fuck","you"));
   }
 
 

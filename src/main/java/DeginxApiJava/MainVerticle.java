@@ -61,14 +61,16 @@ public class MainVerticle extends AbstractVerticle {
   }
 
   public static void JsonResponese(RoutingContext ctx, int code, JsonObject data) {
-    JsonObject json = new JsonObject().put("data",data);
+    String message=ResponseCode.GetMessage(400);
+    JsonObject json = new JsonObject().put("code",code).put("message",message).put("data",data);
     ctx.response()
       .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
       .end(json.encode());
 
   }
   public static void StringResponese(RoutingContext ctx,int code, String data) {
-    JsonObject json = new JsonObject().put("data",data);
+    String message=ResponseCode.GetMessage(400);
+    JsonObject json = new JsonObject().put("code",code).put("message",message).put("data",data);
     ctx.response()
       .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
       .end(json.encode());
