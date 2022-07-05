@@ -1,15 +1,15 @@
 package DeginxApiJava.Routes.Account;
 
 import DeginxApiJava.MainVerticle;
-import io.vertx.core.http.HttpHeaders;
+import com.google.gson.Gson;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
+import java.util.Map;
+
 public class Login {
-  public static void login(RoutingContext ctx) {
-
-    MainVerticle.JsonResponese(ctx,404, new JsonObject().put("fuck","you"));
-  }
-
-
+    static final Gson gson = new Gson();
+    public static void login(RoutingContext ctx) {
+        MainVerticle.message(ctx, 404, Map.of("error", "Not Found"));
+    }
 }
