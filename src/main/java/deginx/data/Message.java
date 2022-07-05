@@ -1,4 +1,4 @@
-package DeginxApiJava.data;
+package deginx.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

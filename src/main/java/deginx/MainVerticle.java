@@ -1,7 +1,7 @@
-package DeginxApiJava;
+package deginx;
 
-import DeginxApiJava.Routes.ApiRoutes;
-import DeginxApiJava.data.Message;
+import deginx.routes.ApiRoutes;
+import deginx.data.Message;
 import com.google.gson.Gson;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
@@ -46,6 +46,10 @@ public class MainVerticle extends AbstractVerticle {
     }
 
     public static void main(String[] args) throws Exception {
+        // 全局异常处理
+        Thread.setDefaultUncaughtExceptionHandler((t, e) -> e.printStackTrace());
+
+        // 启动 Vertx
         new MainVerticle().start();
     }
 

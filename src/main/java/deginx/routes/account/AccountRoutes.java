@@ -1,4 +1,4 @@
-package DeginxApiJava.Routes.Account;
+package deginx.routes.account;
 
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;

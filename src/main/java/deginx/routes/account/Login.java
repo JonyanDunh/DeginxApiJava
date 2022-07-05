@@ -1,8 +1,7 @@
-package DeginxApiJava.Routes.Account;
+package deginx.routes.account;
 
-import DeginxApiJava.MainVerticle;
+import deginx.MainVerticle;
 import com.google.gson.Gson;
-import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
 import java.util.Map;
