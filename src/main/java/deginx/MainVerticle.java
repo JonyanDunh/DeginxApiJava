@@ -1,11 +1,15 @@
 package deginx;
 
+
+
 import deginx.routes.ApiRoutes;
 import deginx.data.Message;
 import com.google.gson.Gson;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpHeaders;
+import io.vertx.core.json.JsonObject;
+import io.vertx.ext.mongo.MongoClient;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 
@@ -37,8 +41,6 @@ public class MainVerticle extends AbstractVerticle {
             .end(gson.toJson(new Message<>(data, code, message(code))));
     }
 
-    ;
-
     public static void message(RoutingContext ctx, int code, String data) {
         ctx.response()
             .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
@@ -56,9 +58,7 @@ public class MainVerticle extends AbstractVerticle {
     @Override
     public void start() throws Exception {
         Router router = Router.router(vertx);
-
         router.mountSubRouter("/api", new ApiRoutes().create(vertx)).produces("application/json");
-
         vertx.createHttpServer()
             .requestHandler(router)
             .listen(8000)
