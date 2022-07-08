@@ -1,6 +1,6 @@
-package deginx.routes;
+package deginx.http.routes;
 
-import deginx.routes.account.AccountRoutes;
+import deginx.http.routes.account.AccountRoutes;
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 

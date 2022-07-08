@@ -1,4 +1,4 @@
-package deginx.routes.account;
+package deginx.http.routes.account;
 
 import io.vertx.ext.web.RoutingContext;
 
