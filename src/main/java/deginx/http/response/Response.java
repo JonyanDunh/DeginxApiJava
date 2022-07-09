@@ -1,7 +1,6 @@
 package deginx.http.response;
 
 import com.google.gson.Gson;
-import deginx.data.Message;
 import io.vertx.core.http.HttpHeaders;
 import io.vertx.ext.web.RoutingContext;
 import lombok.AllArgsConstructor;
@@ -39,13 +38,14 @@ public class Response {
     public static <T> void message(RoutingContext ctx, int code, T data) {
         ctx.response()
             .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
-            .end(gson.toJson(new deginx.data.Message<>(code, message(code),data)));
+            .end(gson.toJson(new Message<>(code, message(code),data)));
+
     }
 
     public static void message(RoutingContext ctx, int code, String data) {
         ctx.response()
             .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
-            .end(gson.toJson(new deginx.data.Message<>(code, message(code),data)));
+            .end(gson.toJson(new Message<>(code, message(code),data)));
     }
 
 }

@@ -8,7 +8,7 @@ public class AccountRoutes {
         Router userRouter = Router.router(vertx);
 
         userRouter.mountSubRouter("/login",new Login().create((vertx)));
-        userRouter.get("/register").handler(Register::register);
+        userRouter.mountSubRouter("/register",new Register().create((vertx)));
 
         userRouter.route().consumes("application/json").produces("application/json");
 
