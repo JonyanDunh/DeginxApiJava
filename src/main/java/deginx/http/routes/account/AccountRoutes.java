@@ -7,10 +7,11 @@ public class AccountRoutes {
     public Router create(Vertx vertx) {
         Router userRouter = Router.router(vertx);
 
-        userRouter.mountSubRouter("/login",new Login().create((vertx)));
-        userRouter.mountSubRouter("/register",new Register().create((vertx)));
 
-        userRouter.route().consumes("application/json").produces("application/json");
+        userRouter.route("/login*")
+                .subRouter(new Login().create((vertx)));
+        userRouter.route("/register*")
+            .subRouter(new Register().create((vertx)));
 
         return userRouter;
     }

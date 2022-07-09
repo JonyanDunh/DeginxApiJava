@@ -19,7 +19,7 @@ public class MainVerticle extends AbstractVerticle {
         .put("db_name", "DeginxApi");
     public static MongoClient mongoClient = MongoClient.createShared(vertx, mongoconfig);
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // 全局异常处理
         Thread.setDefaultUncaughtExceptionHandler((t, e) -> e.printStackTrace());
         // 启动 Vertx
@@ -28,10 +28,10 @@ public class MainVerticle extends AbstractVerticle {
 
 
     @Override
-    public void start() throws Exception {
+    public void start() {
         Router router = Router.router(vertx);
-        router.mountSubRouter("/api", new ApiRoutes().create(vertx)).produces("application/json");
-
+        router.route("/api/*")
+            .subRouter(new ApiRoutes().create(vertx));
 
         vertx.createHttpServer()
             .requestHandler(router)

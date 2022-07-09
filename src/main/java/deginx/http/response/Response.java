@@ -38,6 +38,7 @@ public class Response {
     public static <T> void message(RoutingContext ctx, int code, T data) {
         ctx.response()
             .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
+            .setStatusCode(code)
             .end(gson.toJson(new Message<>(code, message(code),data)));
 
     }
@@ -45,6 +46,7 @@ public class Response {
     public static void message(RoutingContext ctx, int code, String data) {
         ctx.response()
             .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
+            .setStatusCode(code)
             .end(gson.toJson(new Message<>(code, message(code),data)));
     }
 
