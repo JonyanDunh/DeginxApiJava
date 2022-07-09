@@ -13,10 +13,15 @@ import io.vertx.ext.web.Router;
 public class MainVerticle extends AbstractVerticle {
 
     static final Vertx vertx = Vertx.vertx();
-    static JsonObject mongoconfig = new JsonObject()
-        .put("connection_string",
-            "mongodb://deginx-mongodb:ZlRhwajBflUGcufeICIQg7bdeGNxg5WnrMmbSx83NLRbRupCcBVjYrg0gauxT5Ion9HlACeDchvrfKQkVSlMDg==@deginx-mongodb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@deginx-mongodb@")
-        .put("db_name", "DeginxApi");
+    public static JsonObject mongoconfig;
+
+    static {
+        mongoconfig = new JsonObject()
+            .put("connection_string",
+                "mongodb://deginx-mongodb:ZlRhwajBflUGcufeICIQg7bdeGNxg5WnrMmbSx83NLRbRupCcBVjYrg0gauxT5Ion9HlACeDchvrfKQkVSlMDg==@deginx-mongodb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@deginx-mongodb@")
+            .put("db_name", "DeginxApi");
+    }
+
     public static MongoClient mongoClient = MongoClient.createShared(vertx, mongoconfig);
 
     public static void main(String[] args) {

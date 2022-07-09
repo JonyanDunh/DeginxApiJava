@@ -21,9 +21,7 @@ public class Register{
     public Router create(Vertx vertx) {
         Router router = Router.router(vertx);
 
-        router.get("/").handler(request -> {
-            Response.message(request, 404, Map.of("errors", "Not Found"));
-        });
+        router.get("/").handler(request -> Response.message(request, 404, Map.of("errors", "Not Found")));
 
         router.post("/").handler(this::register);
 
@@ -32,35 +30,33 @@ public class Register{
 
 
     public void register(RoutingContext ctx) {
-        ctx.request().bodyHandler(new Handler<Buffer>() {
-            public void handle(Buffer buff) {
-                Map<String, List<String>> PostData = FormData.getParams(ctx, buff);
-                if(PostData!=null) {
-                    final Gson gson = new Gson();
+        ctx.request().bodyHandler(buff -> {
+            Map<String, List<String>> PostData = FormData.getParams(ctx, buff);
+            if (PostData != null) {
+                final Gson gson = new Gson();
 
-                    UserModel<Object> user = new UserModel<>();
-                    user.setUsername(PostData.get("username").get(0));
-                    user.setPassword(BCrypt.hashpw(PostData.get("password").get(0), BCrypt.gensalt()));
-                    user.setQq("1309634881");
+                UserModel<Object> user = new UserModel<>();
+                user.setUsername(PostData.get("username").get(0));
+                user.setPassword(BCrypt.hashpw(PostData.get("password").get(0), BCrypt.gensalt()));
+                user.setQq("1309634881");
 
-                    JsonObject document = new JsonObject(gson.toJson(user));
+                JsonObject document = new JsonObject(gson.toJson(user));
 
-                    mongoClient.save("deginx_users", document, res -> {
-                        if (res.succeeded()) {
-                            String id = res.result();
-                            System.out.println("Saved book with id " + id);
-                        } else {
-                            res.cause().printStackTrace();
-                        }
-                    });
+                mongoClient.save("deginx_users", document, res -> {
+                    if (res.succeeded()) {
+                        String id = res.result();
+                        System.out.println("Saved book with id " + id);
+                    } else {
+                        res.cause().printStackTrace();
+                    }
+                });
 
-                    Response.message(ctx, 200, PostData);
-                }else {
-                    //表单错误
-                    Response.message(ctx, 419, "Request Content-Type requirements are application/x-www-form-urlencoded");
-                }
-
+                Response.message(ctx, 200, PostData);
+            } else {
+                //表单错误
+                Response.message(ctx, 419, "Request Content-Type requirements are application/x-www-form-urlencoded");
             }
+
         });
 
     }
