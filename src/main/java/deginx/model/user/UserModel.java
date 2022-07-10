@@ -14,8 +14,10 @@ public class UserModel<T> {
     String avatar;
     String user_uuid;
     String token;
+    String email;
 
     public UserModel() {
 
     }
+
 }

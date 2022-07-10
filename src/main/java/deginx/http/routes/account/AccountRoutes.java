@@ -9,7 +9,7 @@ public class AccountRoutes {
 
 
         userRouter.route("/login*")
-                .subRouter(new Login().create((vertx)));
+            .subRouter(new Login().create((vertx)));
         userRouter.route("/register*")
             .subRouter(new Register().create((vertx)));
 
