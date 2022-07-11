@@ -26,25 +26,17 @@ public class Login {
         ctx.request().bodyHandler(buff -> {
             Map<String, List<String>> PostData = FormData.getParams(ctx, buff);
             if (PostData != null) {
-                UserData.getUser(PostData.get("username").get(0), result -> {
+                UserData.authenticateUser(PostData.get("username").get(0),PostData.get("password").get(0), result -> {
                     if (result != null) {
                         //有此用户
-                        if (BCrypt.checkpw(PostData.get("password").get(0), result.getValue("password").toString())) {
-                            //密码正确
-                            Response.message(ctx, 200, result.put("password", null).getMap());
-                        } else {
-                            //密码错误
-                            Response.message(ctx, 454, "");
-                        }
+                        Response.message(ctx, 200, result.getMap());
                     } else {
                         //无此用户
                         Response.message(ctx, 454, "");
                     }
-
                 });
             } else {
                 //表单错误
-
                 Response.message(ctx, 419, "Request Content-Type requirements are application/x-www-form-urlencoded");
             }
 

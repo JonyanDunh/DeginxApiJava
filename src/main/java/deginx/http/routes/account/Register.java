@@ -41,7 +41,7 @@ public class Register {
 
                         UserData.creatUser(username, user, created_user_result -> {
                             if (created_user_result != null) {
-                                Response.message(ctx, 200, created_user_result.put("password", null).getMap());
+                                Response.message(ctx, 200, created_user_result.getMap());
 
                             } else {
                                 Response.message(ctx, 453, "");
