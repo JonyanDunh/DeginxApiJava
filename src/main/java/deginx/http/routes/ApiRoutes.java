@@ -10,6 +10,8 @@ public class ApiRoutes {
         Router ApiRoutes = Router.router(vertx);
         ApiRoutes.route("/account/*")
             .subRouter(new AccountRoutes().create(vertx));
+        ApiRoutes.route("/test*")
+            .subRouter(new test().create(vertx));
         return ApiRoutes;
     }
 

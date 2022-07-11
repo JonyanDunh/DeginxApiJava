@@ -8,6 +8,7 @@ import io.vertx.core.Vertx;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.mongo.MongoClient;
 import io.vertx.ext.web.Router;
+import io.vertx.ext.web.handler.CorsHandler;
 
 @SuppressWarnings("SpellCheckingInspection")
 public class MainVerticle extends AbstractVerticle {
@@ -36,6 +37,7 @@ public class MainVerticle extends AbstractVerticle {
     public void start() {
         Router router = Router.router(vertx);
         router.route("/api/*")
+            .handler( CorsHandler.create("*"))
             .subRouter(new ApiRoutes().create(vertx));
 
         vertx.createHttpServer()

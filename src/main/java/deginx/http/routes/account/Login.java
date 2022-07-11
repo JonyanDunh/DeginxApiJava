@@ -4,8 +4,10 @@ import deginx.http.response.Response;
 import deginx.utility.url.FormData;
 import deginx.utility.user.UserData;
 import io.vertx.core.Vertx;
+import io.vertx.core.http.HttpMethod;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
+import io.vertx.ext.web.handler.CorsHandler;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.util.List;
@@ -17,7 +19,8 @@ public class Login {
         Router router = Router.router(vertx);
 
         router.get("/").handler(request -> Response.message(request, 404, Map.of("errors", "Not Found")));
-        router.post("/").handler(this::login);
+        router.post("/")
+            .handler(this::login);
 
         return router;
     }
@@ -29,6 +32,7 @@ public class Login {
                 UserData.authenticateUser(PostData.get("username").get(0),PostData.get("password").get(0), result -> {
                     if (result != null) {
                         //有此用户
+                        System.out.println(result.getMap());
                         Response.message(ctx, 200, result.getMap());
                     } else {
                         //无此用户

@@ -51,7 +51,6 @@ public class UserData {
                     }
                 } else {
                     //无此用户
-
                     assert false;
                     handler.handle(null);
                 }

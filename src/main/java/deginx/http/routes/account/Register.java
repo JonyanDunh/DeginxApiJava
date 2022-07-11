@@ -51,8 +51,6 @@ public class Register {
 
                     }
                 });
-
-
             } else {
                 //表单错误
                 Response.message(ctx, 419, "Request Content-Type requirements are application/x-www-form-urlencoded");
