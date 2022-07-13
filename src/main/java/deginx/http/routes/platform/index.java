@@ -27,7 +27,6 @@ public class index {
 
                 }
             });*/
-            System.out.println(ctx.user().get("dfu").toString());
             Response.message(ctx,500,"fuck");
 
 
