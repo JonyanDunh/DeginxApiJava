@@ -25,11 +25,13 @@ public class Response {
         put(500, "Server Error");
         put(404, "Not Found");
         put(400, "Error");
+        put(401,"Unauthorized Error");
         put(403, "Forbidden");
         put(419, "Verify that the form data is accurate");
         put(452, "The user already exists");
         put(453, "Failed to create user, please try again");
         put(454, "The user does not exist or has an incorrect password");
+        put(455, "Token Error!");
     }};
     public static String message(int code) {
         return ResponseCode.getOrDefault(code, "");
