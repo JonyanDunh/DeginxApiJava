@@ -52,6 +52,7 @@ public class UserInfo {
             }
         });
     }
+
     public static void updateUser(User user, JsonObject update, Handler<AsyncResult<JsonObject>> handler) {
         String username=user.principal().getString("username");
         JsonObject query = new JsonObject()

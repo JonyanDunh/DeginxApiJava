@@ -16,7 +16,7 @@ public class PlatformRoutes {
         ChainAuthHandler chain = ChainAuthHandler.any().add(MainVerticle.basicAuthHandler);
         Router userRouter = Router.router(vertx);
 
-        userRouter.route().handler(new UserAuthHandler());
+        //userRouter.route().handler(new UserAuthHandler());
 
         userRouter.route("/*")
             .subRouter(new index().create((vertx)));

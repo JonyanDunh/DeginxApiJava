@@ -33,7 +33,7 @@ public class MainVerticle extends AbstractVerticle {
     final static Logger logger = LoggerFactory.getLogger("loggerName");
     public static AuthenticationProvider provider = new UserAuth();
     public static final AuthenticationHandler basicAuthHandler = BasicAuthHandler.create(provider);
-    public static long AuthExpireSeconds = 3;
+    public static long AuthExpireSeconds = 3600*24*30;
     public static JWTAuth JWTprovider = JWTAuth.create(vertx, new JWTAuthOptions()
         .addPubSecKey(new PubSecKeyOptions()
             .setAlgorithm("HS256")
@@ -65,7 +65,7 @@ public class MainVerticle extends AbstractVerticle {
         });
 
         Router router = Router.router(vertx);
-        router.route().handler(CorsHandler.create("*"));
+        //router.route().handler(CorsHandler.create("*"));
 
         router.route().failureHandler(ctx -> Response.message(ctx, ctx.statusCode(), ctx.failure().getMessage()));
         router.route().handler(StaticHandler.create("resources/"));
