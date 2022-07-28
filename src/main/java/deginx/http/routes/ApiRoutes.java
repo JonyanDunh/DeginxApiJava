@@ -18,6 +18,7 @@ public class ApiRoutes {
             .subRouter(new PlatformRoutes().create(vertx));
         ApiRoutes.route("/tools*")
             .subRouter(new ToolsRoutes().create(vertx));
+
         return ApiRoutes;
     }
 

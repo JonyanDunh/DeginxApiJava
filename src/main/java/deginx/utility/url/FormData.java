@@ -19,5 +19,16 @@ public class FormData {
         return params;
     }
 
+    public static boolean checkParams(Map<String, List<String>> PostData, String[] Params) {
+        for(String params : Params){
+
+            if(PostData.get(params)==null){
+                return  false;
+            }
+
+        }
+        return true;
+    }
+
 
 }

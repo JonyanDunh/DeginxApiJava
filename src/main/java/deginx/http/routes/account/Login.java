@@ -20,8 +20,7 @@ public class Login {
         Router router = Router.router(vertx);
 
         router.get("/").handler(request -> Response.message(request, 404, Map.of("errors", "Not Found")));
-        router.post("/")
-            .handler(this::login);
+        router.post("/").handler(this::login);
         return router;
     }
 
@@ -31,22 +30,25 @@ public class Login {
             Map<String, List<String>> PostData = FormData.getParams(ctx, buff);
             if (PostData != null) {
 
+                if (!FormData.checkParams(PostData, new String[]{"username", "password"})) {
+                    Response.message(ctx, 419, "Request Content-Type requirements are application/x-www-form-urlencoded");
 
-                JsonObject authInfo = new JsonObject().put("username", PostData.get("username").get(0)).put("password", PostData.get("password").get(0));
+                } else {
+                    JsonObject authInfo = new JsonObject().put("username", PostData.get("username").get(0)).put("password", PostData.get("password").get(0));
 
-                MainVerticle.provider.authenticate(authInfo, result -> {
-                    if (result.succeeded()) {
-                        //有此用户
-                        User user = result.result();
-                        ctx.setUser(user);
-                        Response.message(ctx, 200, user.principal().getMap());
-                    } else {
+                    MainVerticle.provider.authenticate(authInfo, result -> {
+                        if (result.succeeded()) {
+                            //有此用户
+                            User user = result.result();
+                            ctx.setUser(user);
+                            Response.message(ctx, 200, user.principal().getMap());
+                        } else {
 
-                        //无此用户
-                        Response.message(ctx, 454, "User '"+PostData.get("username").get(0)+"' does not exist or has the wrong password");
-                    }
-                });
-
+                            //无此用户
+                            Response.message(ctx, 454, "User '" + PostData.get("username").get(0) + "' does not exist or has the wrong password");
+                        }
+                    });
+                }
 
             } else {
                 //表单错误

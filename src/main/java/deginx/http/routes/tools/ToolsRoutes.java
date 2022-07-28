@@ -2,6 +2,7 @@ package deginx.http.routes.tools;
 
 import deginx.MainVerticle;
 
+import deginx.http.routes.tools.VideoWebSite.VideoWebSiteRoutes;
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.handler.ChainAuthHandler;
@@ -16,6 +17,8 @@ public class ToolsRoutes {
             .subRouter(new Add().create((vertx)));
         userRouter.route("/get*")
             .subRouter(new Get().create((vertx)));
+        userRouter.route("VideoWebSite*")
+            .subRouter(new VideoWebSiteRoutes().create(vertx));
         return userRouter;
     }
 }

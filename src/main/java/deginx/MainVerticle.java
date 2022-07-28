@@ -53,7 +53,7 @@ public class MainVerticle extends AbstractVerticle {
 
     public static void main(String[] args) {
         // 全局异常处理
-        //Thread.setDefaultUncaughtExceptionHandler((t, e) -> e.printStackTrace());
+        Thread.setDefaultUncaughtExceptionHandler((t, e) -> e.printStackTrace());
         // 启动 Vertx
         new MainVerticle().start();
     }
@@ -71,6 +71,7 @@ public class MainVerticle extends AbstractVerticle {
         router.route().handler(StaticHandler.create("resources/"));
         router.route().handler(SessionHandler.create(redisSessionStore));
         router.route("/api/*").subRouter(new ApiRoutes().create(vertx));
+        router.route("/tools/*").subRouter(new ApiRoutes().create(vertx));
         router.route().handler(loggingHandler);
         vertx.createHttpServer()
             .requestHandler(router)
