@@ -17,7 +17,7 @@ public class ToolsRoutes {
             .subRouter(new Add().create((vertx)));
         userRouter.route("/get*")
             .subRouter(new Get().create((vertx)));
-        userRouter.route("VideoWebSite*")
+        userRouter.route("/VideoWebSite*")
             .subRouter(new VideoWebSiteRoutes().create(vertx));
         return userRouter;
     }

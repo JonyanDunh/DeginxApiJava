@@ -32,6 +32,7 @@ public class Response {
         put(453, "Failed to create user, please try again");
         put(454, "The user does not exist or has an incorrect password");
         put(455, "Token Error!");
+        put(456,"Tools Error!");
     }};
     public static String message(int code) {
         return ResponseCode.getOrDefault(code, "");

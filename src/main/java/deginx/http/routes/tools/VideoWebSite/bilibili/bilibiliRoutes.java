@@ -1,6 +1,5 @@
 package deginx.http.routes.tools.VideoWebSite.bilibili;
 
-import deginx.http.routes.tools.Add;
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 
@@ -10,8 +9,8 @@ public class bilibiliRoutes {
         Router userRouter = Router.router(vertx);
 
 
-        userRouter.route("/uploadDynamicCover*")
-            .subRouter(new uploadDynamicCover().create((vertx)));
+        userRouter.route("/uploadLiveDynamicCover*")
+            .subRouter(new uploadLiveDynamicCover().create((vertx)));
         return userRouter;
     }
 }
