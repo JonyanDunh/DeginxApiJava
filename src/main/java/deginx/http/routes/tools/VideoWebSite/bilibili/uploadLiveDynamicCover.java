@@ -43,7 +43,7 @@ public class uploadLiveDynamicCover {
                     //form.set("coverVertical", "Cooper");
                     WebClient client = WebClient.create(vertx);
 
-                    client.post(443, "api.live.bilibili.com", "/xlive/app-blink/v1/preLive/UpdatePreLiveInfo").ssl(true).putHeader("content-type", "multipart/form-data").putHeader("cookie", "SESSDATA=" + SESSDATA).sendForm(form)
+                    client.post(443, "t0ufn27dwf.execute-api.ap-southeast-1.amazonaws.com", "/proxy/bilibili/api/live/xlive/app-blink/v1/preLive/UpdatePreLiveInfo").ssl(true).putHeader("content-type", "multipart/form-data").putHeader("cookie", "SESSDATA=" + SESSDATA).sendForm(form)
                         .onSuccess(response -> {
 
                         System.out.println("Received response " + response.body());
