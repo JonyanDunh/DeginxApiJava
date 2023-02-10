@@ -41,7 +41,7 @@ public class Response {
     public static <T> void message(RoutingContext ctx, int code, T data) {
         ctx.response()
             .putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
-            .putHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, "http://127.0.0.1:3000")
+            .putHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, "*")
             .putHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_CREDENTIALS, "true")
             .setStatusCode(code)
             .end(gson.toJson(new Message<>(code, message(code),data)));

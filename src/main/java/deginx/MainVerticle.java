@@ -37,10 +37,12 @@ public class MainVerticle extends AbstractVerticle {
     public static long AuthExpireSeconds = 3600 * 24 * 30;
     public static JWTAuth JWTprovider = JWTAuth.create(vertx, new JWTAuthOptions().addPubSecKey(new PubSecKeyOptions().setAlgorithm("HS256").setBuffer("keyboard cat")));
     public static MongoClient mongoClient = MongoClient.createShared(vertx, new JsonObject()
-        //.put("connection_string", "mongodb://deginx-mongodb:CPpaCwL0mGGmW7R6YAvsl4mGi8tvmgH5IurIgDVbdG5lAuLJRTSAmWrljnC6POMclRhPI5Z6e1fZObtuJEpQ0w==@deginx-mongodb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@deginx-mongodb@")
-        .put("connection_string", "mongodb://localhost:27017").put("db_name", "DeginxApi"));
+        .put("connection_string",
+            "mongodb://Deginx:C8nJpFZNsMxiYPLG@127.0.0.1:27017/Deginx"
+        )
+        .put("db_name", "Deginx"));
 
-    Redis redis = Redis.createClient(vertx, "redis://127.0.0.1:6379");
+    Redis redis = Redis.createClient(vertx, "redis://:deginxredis@127.0.0.1:6379");
     RedisSessionStore redisSessionStore = RedisSessionStore.create(vertx, redis);
 
     public static void main(String[] args) {
@@ -56,30 +58,7 @@ public class MainVerticle extends AbstractVerticle {
         redis.connect().onSuccess(conn -> System.out.println("redis success connect")).onFailure(conn -> {
             System.out.println("redis failure connect");
         });
-        /*WebClient client = WebClient.create(vertx);
-        String[] aids = {"686513406", "686310130", "597420690", "971878849", "667881688"};
-        for (String aid : aids) {
-            MultiMap Likeform = MultiMap.caseInsensitiveMultiMap();
-            Likeform.set("aid", aid);
-            Likeform.set("csrf", "d153b4d7ba82aa38f3c8e44d165679bf");
-            client.post(443, "api.bilibili.com", "/x/web-interface/archive/like/triple").ssl(true).putHeader("content-type", "multipart/form-data").putHeader("cookie", "SESSDATA=26969d6d%2C1674809047%2C608c3*71").sendForm(Likeform)
-                .onSuccess(response -> {
-                System.out.println(response.body());
-            }).onFailure(err ->
-
-                System.out.println(err.getMessage()));
-            Random rand = new Random();
-            MultiMap Heartform = MultiMap.caseInsensitiveMultiMap();
-            Heartform.set("aid", aid);
-            Heartform.set("played_time", String.valueOf(rand.nextInt(40) + 10));
-            client.post(443, "api.bilibili.com", "/x/click-interface/web/heartbeat").ssl(true).putHeader("content-type", "multipart/form-data").putHeader("cookie", "SESSDATA=26969d6d%2C1674809047%2C608c3*71").sendForm(Heartform).onSuccess(response -> {
-                System.out.println(response.body());
-            }).onFailure(err ->
-
-                System.out.println(err.getMessage()));
-        }*/
         Router router = Router.router(vertx);
-        //router.route().handler(CorsHandler.create("*"));
 
         router.route().failureHandler(ctx -> Response.message(ctx, ctx.statusCode(), ctx.failure().getMessage()));
         router.route().handler(StaticHandler.create("resources/"));
@@ -89,6 +68,6 @@ public class MainVerticle extends AbstractVerticle {
         vertx.createHttpServer().requestHandler(router).exceptionHandler(exec -> {
 
             System.out.println(exec.getMessage());
-        }).listen(8000, "0.0.0.0").onSuccess(server -> System.out.printf("Server started on port %d%n", server.actualPort()));
+        }).listen(4399, "0.0.0.0").onSuccess(server -> System.out.printf("Server started on port %d%n", server.actualPort()));
     }
 }

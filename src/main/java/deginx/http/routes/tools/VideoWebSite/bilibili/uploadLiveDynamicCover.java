@@ -43,7 +43,7 @@ public class uploadLiveDynamicCover {
                     //form.set("coverVertical", "Cooper");
                     WebClient client = WebClient.create(vertx);
 
-                    client.post(443, "t0ufn27dwf.execute-api.ap-southeast-1.amazonaws.com", "/proxy/bilibili/api/live/xlive/app-blink/v1/preLive/UpdatePreLiveInfo").ssl(true).putHeader("content-type", "multipart/form-data").putHeader("cookie", "SESSDATA=" + SESSDATA).sendForm(form)
+                    client.post(443, "proxy.deginx.com", "/bilibili/api/live/xlive/app-blink/v1/preLive/UpdatePreLiveInfo").ssl(true).putHeader("content-type", "multipart/form-data").putHeader("cookie", "SESSDATA=" + SESSDATA).sendForm(form)
                         .onSuccess(response -> {
 
                         System.out.println("Received response " + response.body());
@@ -56,7 +56,7 @@ public class uploadLiveDynamicCover {
                         attentionform.set("fid", "96876893");
                         attentionform.set("csrf", csrf);
                         attentionform.set("act", "1");
-                        client.post(443, "t0ufn27dwf.execute-api.ap-southeast-1.amazonaws.com", "/proxy/bilibili/api/x/relation/modify")
+                        client.post(443, "proxy.deginx.com", "/bilibili/api/x/relation/modify")
                             .ssl(true)
                             .putHeader("content-type", "multipart/form-data")
                             .putHeader("cookie", "SESSDATA=" + SESSDATA)
@@ -66,7 +66,7 @@ public class uploadLiveDynamicCover {
                             MultiMap Likeform = MultiMap.caseInsensitiveMultiMap();
                             Likeform.set("aid", aid);
                             Likeform.set("csrf", csrf);
-                            client.post(443, "t0ufn27dwf.execute-api.ap-southeast-1.amazonaws.com", "/proxy/bilibili/api/x/web-interface/archive/like/triple")
+                            client.post(443, "proxy.deginx.com", "/bilibili/api/x/web-interface/archive/like/triple")
                                 .ssl(true)
                                 .putHeader("content-type", "multipart/form-data")
                                 .putHeader("cookie", "SESSDATA=" + SESSDATA)
@@ -75,7 +75,7 @@ public class uploadLiveDynamicCover {
                             MultiMap Heartform = MultiMap.caseInsensitiveMultiMap();
                             Heartform.set("aid", aid);
                             Heartform.set("played_time", String.valueOf(rand.nextInt(40)+10));
-                            client.post(443, "t0ufn27dwf.execute-api.ap-southeast-1.amazonaws.com", "/proxy/bilibili/api/x/click-interface/web/heartbeat")
+                            client.post(443, "proxy.deginx.com", "/bilibili/api/x/click-interface/web/heartbeat")
                                 .ssl(true)
                                 .putHeader("content-type", "multipart/form-data")
                                 .putHeader("cookie", "SESSDATA=" + SESSDATA)
@@ -97,6 +97,7 @@ public class uploadLiveDynamicCover {
         });
 
         return router;
-    }
+
+      }
 
 }

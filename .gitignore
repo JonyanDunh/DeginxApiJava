@@ -124,3 +124,5 @@ logs/
 # test config
 /config.json
 /web/
+/out/
+/target/

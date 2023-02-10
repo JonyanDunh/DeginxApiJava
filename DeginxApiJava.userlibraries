@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: io.vertx:vertx-web-validation:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-validation/4.3.1/vertx-web-validation-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-core:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-core/4.3.1/vertx-core-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-common:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-buffer:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-transport:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-handler:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-codec:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-handler-proxy:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-handler-proxy/4.1.77.Final/netty-handler-proxy-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-codec-socks:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-codec-socks/4.1.77.Final/netty-codec-socks-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-codec-http:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-codec-http2:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-codec-http2/4.1.77.Final/netty-codec-http2-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-resolver:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-resolver-dns:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-resolver-dns/4.1.77.Final/netty-resolver-dns-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-codec-dns:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-codec-dns/4.1.77.Final/netty-codec-dns-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.2">
+    <archive path="C:/Users/Jonya/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-client:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-client/4.3.1/vertx-web-client-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-common:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-common/4.3.1/vertx-web-common-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-auth-common:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-auth-common/4.3.1/vertx-auth-common-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-auth-jwt:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-auth-jwt/4.3.1/vertx-auth-jwt-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web/4.3.1/vertx-web-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-bridge-common:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-bridge-common/4.3.1/vertx-bridge-common-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-openapi:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-openapi/4.3.1/vertx-web-openapi-4.3.1.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.2.1">
+    <archive path="C:/Users/Jonya/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.2">
+    <archive path="C:/Users/Jonya/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2">
+    <archive path="C:/Users/Jonya/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.2/jackson-dataformat-yaml-2.13.2.jar" />
+  </library>
+  <library name="Maven: org.yaml:snakeyaml:1.30">
+    <archive path="C:/Users/Jonya/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar" />
+  </library>
+  <library name="Maven: org.junit.platform:junit-platform-engine:1.8.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-json-schema:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-json-schema/4.3.1/vertx-json-schema-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-api-contract:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-api-contract/4.3.1/vertx-web-api-contract-4.3.1.jar" />
+  </library>
+  <library name="Maven: com.networknt:json-schema-validator:1.0.43">
+    <archive path="C:/Users/Jonya/.m2/repository/com/networknt/json-schema-validator/1.0.43/json-schema-validator-1.0.43.jar" />
+  </library>
+  <library name="Maven: org.apache.commons:commons-lang3:3.5">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar" />
+  </library>
+  <library name="Maven: org.jruby.joni:joni:2.1.31">
+    <archive path="C:/Users/Jonya/.m2/repository/org/jruby/joni/joni/2.1.31/joni-2.1.31.jar" />
+  </library>
+  <library name="Maven: org.jruby.jcodings:jcodings:1.0.46">
+    <archive path="C:/Users/Jonya/.m2/repository/org/jruby/jcodings/jcodings/1.0.46/jcodings-1.0.46.jar" />
+  </library>
+  <library name="Maven: io.swagger.parser.v3:swagger-parser-v3:2.0.21">
+    <archive path="C:/Users/Jonya/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.0.21/swagger-parser-v3-2.0.21.jar" />
+  </library>
+  <library name="Maven: io.swagger.core.v3:swagger-models:2.1.4">
+    <archive path="C:/Users/Jonya/.m2/repository/io/swagger/core/v3/swagger-models/2.1.4/swagger-models-2.1.4.jar" />
+  </library>
+  <library name="Maven: io.swagger.core.v3:swagger-core:2.1.4">
+    <archive path="C:/Users/Jonya/.m2/repository/io/swagger/core/v3/swagger-core/2.1.4/swagger-core-2.1.4.jar" />
+  </library>
+  <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2">
+    <archive path="C:/Users/Jonya/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar" />
+  </library>
+  <library name="Maven: jakarta.activation:jakarta.activation-api:1.2.1">
+    <archive path="C:/Users/Jonya/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.2">
+    <archive path="C:/Users/Jonya/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar" />
+  </library>
+  <library name="Maven: io.swagger.core.v3:swagger-annotations:2.1.4">
+    <archive path="C:/Users/Jonya/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.4/swagger-annotations-2.1.4.jar" />
+  </library>
+  <library name="Maven: jakarta.validation:jakarta.validation-api:2.0.2">
+    <archive path="C:/Users/Jonya/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar" />
+  </library>
+  <library name="Maven: io.swagger.parser.v3:swagger-parser-core:2.0.21">
+    <archive path="C:/Users/Jonya/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.0.21/swagger-parser-core-2.0.21.jar" />
+  </library>
+  <library name="Maven: commons-io:commons-io:2.6">
+    <archive path="C:/Users/Jonya/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-uri-template:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-uri-template/4.3.1/vertx-uri-template-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-auth-oauth2:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-auth-oauth2/4.3.1/vertx-auth-oauth2-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-redis-client:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-redis-client/4.3.1/vertx-redis-client-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-graphql:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-graphql/4.3.1/vertx-web-graphql-4.3.1.jar" />
+  </library>
+  <library name="Maven: com.graphql-java:graphql-java:18.1">
+    <archive path="C:/Users/Jonya/.m2/repository/com/graphql-java/graphql-java/18.1/graphql-java-18.1.jar" />
+  </library>
+  <library name="Maven: com.graphql-java:java-dataloader:3.1.2">
+    <archive path="C:/Users/Jonya/.m2/repository/com/graphql-java/java-dataloader/3.1.2/java-dataloader-3.1.2.jar" />
+  </library>
+  <library name="Maven: org.antlr:antlr4-runtime:4.9.3">
+    <archive path="C:/Users/Jonya/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar" />
+  </library>
+  <library name="Maven: org.reactivestreams:reactive-streams:1.0.3">
+    <archive path="C:/Users/Jonya/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-sstore-cookie:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-sstore-cookie/4.3.1/vertx-web-sstore-cookie-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-sstore-infinispan:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-sstore-infinispan/4.3.1/vertx-web-sstore-infinispan-4.3.1.jar" />
+  </library>
+  <library name="Maven: org.infinispan:infinispan-client-hotrod:13.0.8.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/infinispan/infinispan-client-hotrod/13.0.8.Final/infinispan-client-hotrod-13.0.8.Final.jar" />
+  </library>
+  <library name="Maven: org.infinispan:infinispan-commons:13.0.8.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/infinispan/infinispan-commons/13.0.8.Final/infinispan-commons-13.0.8.Final.jar" />
+  </library>
+  <library name="Maven: org.infinispan.protostream:protostream:4.4.1.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/infinispan/protostream/protostream/4.4.1.Final/protostream-4.4.1.Final.jar" />
+  </library>
+  <library name="Maven: org.infinispan.protostream:protostream-types:4.4.1.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/infinispan/protostream/protostream-types/4.4.1.Final/protostream-types-4.4.1.Final.jar" />
+  </library>
+  <library name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-digest:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-digest/1.17.2.Final/wildfly-elytron-sasl-digest-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-auth-server:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-auth-server/1.17.2.Final/wildfly-elytron-auth-server-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-auth:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-auth/1.17.2.Final/wildfly-elytron-auth-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-base:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-base/1.17.2.Final/wildfly-elytron-base-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-permission:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-permission/1.17.2.Final/wildfly-elytron-permission-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-x500:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-x500/1.17.2.Final/wildfly-elytron-x500-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-credential:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-credential/1.17.2.Final/wildfly-elytron-credential-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-keystore:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-keystore/1.17.2.Final/wildfly-elytron-keystore-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-x500-cert:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-x500-cert/1.17.2.Final/wildfly-elytron-x500-cert-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-x500-cert-util:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-x500-cert-util/1.17.2.Final/wildfly-elytron-x500-cert-util-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.apache.sshd:sshd-common:2.3.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/sshd/sshd-common/2.3.0/sshd-common-2.3.0.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-provider-util:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-provider-util/1.17.2.Final/wildfly-elytron-provider-util-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-mechanism:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-mechanism/1.17.2.Final/wildfly-elytron-mechanism-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-http:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-http/1.17.2.Final/wildfly-elytron-http-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-mechanism-digest:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-mechanism-digest/1.17.2.Final/wildfly-elytron-mechanism-digest-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl/1.17.2.Final/wildfly-elytron-sasl-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-ssl:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-ssl/1.17.2.Final/wildfly-elytron-ssl-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-util:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-util/1.17.2.Final/wildfly-elytron-util-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-external:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-external/1.17.2.Final/wildfly-elytron-sasl-external-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-gs2:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-gs2/1.17.2.Final/wildfly-elytron-sasl-gs2-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-asn1:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-asn1/1.17.2.Final/wildfly-elytron-asn1-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-mechanism-gssapi:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-mechanism-gssapi/1.17.2.Final/wildfly-elytron-mechanism-gssapi-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-security-manager-action:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-security-manager-action/1.17.2.Final/wildfly-elytron-security-manager-action-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-gssapi:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-gssapi/1.17.2.Final/wildfly-elytron-sasl-gssapi-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-oauth2:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-oauth2/1.17.2.Final/wildfly-elytron-sasl-oauth2-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-mechanism-oauth2:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-mechanism-oauth2/1.17.2.Final/wildfly-elytron-mechanism-oauth2-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-plain:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-plain/1.17.2.Final/wildfly-elytron-sasl-plain-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-sasl-scram:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-sasl-scram/1.17.2.Final/wildfly-elytron-sasl-scram-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-mechanism-scram:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-mechanism-scram/1.17.2.Final/wildfly-elytron-mechanism-scram-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: org.wildfly.security:wildfly-elytron-password-impl:1.17.2.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/security/wildfly-elytron-password-impl/1.17.2.Final/wildfly-elytron-password-impl-1.17.2.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-transport-native-unix-common:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: io.netty:netty-transport-classes-epoll:4.1.77.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar" />
+  </library>
+  <library name="Maven: jakarta.transaction:jakarta.transaction-api:1.3.3">
+    <archive path="C:/Users/Jonya/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar" />
+  </library>
+  <library name="Maven: org.wildfly.common:wildfly-common:1.5.1.Final">
+    <archive path="C:/Users/Jonya/.m2/repository/org/wildfly/common/wildfly-common/1.5.1.Final/wildfly-common-1.5.1.Final.jar" />
+  </library>
+  <library name="Maven: com.github.ben-manes.caffeine:caffeine:2.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.8.0/caffeine-2.8.0.jar" />
+  </library>
+  <library name="Maven: io.reactivex.rxjava3:rxjava:3.0.13">
+    <archive path="C:/Users/Jonya/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.13/rxjava-3.0.13.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-mail-client:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-mail-client/4.3.1/vertx-mail-client-4.3.1.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-web-sstore-redis:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-web-sstore-redis/4.3.1/vertx-web-sstore-redis-4.3.1.jar" />
+  </library>
+  <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar" />
+  </library>
+  <library name="Maven: org.mongodb:mongodb-driver-reactivestreams:4.1.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/mongodb/mongodb-driver-reactivestreams/4.1.2/mongodb-driver-reactivestreams-4.1.2.jar" />
+  </library>
+  <library name="Maven: org.mongodb:bson:4.1.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/mongodb/bson/4.1.2/bson-4.1.2.jar" />
+  </library>
+  <library name="Maven: org.mongodb:mongodb-driver-core:4.1.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/mongodb/mongodb-driver-core/4.1.2/mongodb-driver-core-4.1.2.jar" />
+  </library>
+  <library name="Maven: org.apache.commons:commons-collections4:4.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-junit5:4.3.1">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-junit5/4.3.1/vertx-junit5-4.3.1.jar" />
+  </library>
+  <library name="Maven: org.junit.jupiter:junit-jupiter-params:5.8.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar" />
+  </library>
+  <library name="Maven: org.opentest4j:opentest4j:1.2.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar" />
+  </library>
+  <library name="Maven: org.json:json:20220320">
+    <archive path="C:/Users/Jonya/.m2/repository/org/json/json/20220320/json-20220320.jar" />
+  </library>
+  <library name="Maven: org.mindrot:jbcrypt:0.4">
+    <archive path="C:/Users/Jonya/.m2/repository/org/mindrot/jbcrypt/0.4/jbcrypt-0.4.jar" />
+  </library>
+  <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar" />
+  </library>
+  <library name="Maven: com.google.code.gson:gson:2.9.0">
+    <archive path="C:/Users/Jonya/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar" />
+  </library>
+  <library name="Maven: org.junit.platform:junit-platform-commons:1.8.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar" />
+  </library>
+  <library name="Maven: org.projectlombok:lombok:1.18.24">
+    <archive path="C:/Users/Jonya/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+  </library>
+  <library name="Maven: org.apiguardian:apiguardian-api:1.1.2">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-mongo-client:4.3.2">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-mongo-client/4.3.2/vertx-mongo-client-4.3.2.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-auth-shiro:4.3.2">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-auth-shiro/4.3.2/vertx-auth-shiro-4.3.2.jar" />
+  </library>
+  <library name="Maven: org.slf4j:slf4j-api:1.7.21">
+    <archive path="C:/Users/Jonya/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar" />
+  </library>
+  <library name="Maven: io.vertx:vertx-config:4.3.2">
+    <archive path="C:/Users/Jonya/.m2/repository/io/vertx/vertx-config/4.3.2/vertx-config-4.3.2.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-core:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-core/1.8.0/shiro-core-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-lang:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-lang/1.8.0/shiro-lang-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-cache:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-cache/1.8.0/shiro-cache-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-crypto-hash:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-crypto-hash/1.8.0/shiro-crypto-hash-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-crypto-core:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-crypto-core/1.8.0/shiro-crypto-core-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-crypto-cipher:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-crypto-cipher/1.8.0/shiro-crypto-cipher-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-config-core:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-config-core/1.8.0/shiro-config-core-1.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-config-ogdl:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-config-ogdl/1.8.0/shiro-config-ogdl-1.8.0.jar" />
+  </library>
+  <library name="Maven: commons-beanutils:commons-beanutils:1.9.4">
+    <archive path="C:/Users/Jonya/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar" />
+  </library>
+  <library name="Maven: commons-collections:commons-collections:3.2.2">
+    <archive path="C:/Users/Jonya/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" />
+  </library>
+  <library name="Maven: org.apache.shiro:shiro-event:1.8.0">
+    <archive path="C:/Users/Jonya/.m2/repository/org/apache/shiro/shiro-event/1.8.0/shiro-event-1.8.0.jar" />
+  </library>
+</eclipse-userlibraries>
+

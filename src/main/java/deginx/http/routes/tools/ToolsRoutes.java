@@ -15,10 +15,14 @@ public class ToolsRoutes {
 
         userRouter.route("/add*")
             .subRouter(new Add().create((vertx)));
+        userRouter.route("/add_item_type*")
+            .subRouter(new AddItemType().create((vertx)));
         userRouter.route("/get*")
             .subRouter(new Get().create((vertx)));
-        userRouter.route("/VideoWebSite*")
-            .subRouter(new VideoWebSiteRoutes().create(vertx));
+        userRouter.route("/get_item_type*")
+            .subRouter(new GetItemType().create((vertx)));
+//        userRouter.route("/VideoWebSite*")
+//            .subRouter(new VideoWebSiteRoutes().create(vertx));
         return userRouter;
     }
 }
